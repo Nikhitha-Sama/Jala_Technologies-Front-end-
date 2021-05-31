@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <style>
+        div.a
+        {
+            border-style:solid;
+            height: 80px;
+            text-align: center;
+            font-size: 50px;
+            background-color: cadetblue;
+        }
+        article
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+<script>
+    function myFunction() {
+      document.getElementById("verify").disabled = true;
+      alert("Successfully verified");
+    }
+    </script>
+</head>
+<body style="font-family: monospace;font-size:large;">
+    <section>
+        <header><div class="a"> Welcome to <span style="color:white;">XYZ shopping</span></div></header>
+    <br><br>
+    <hgroup>
+        <h3><article> New styles everyday at attractive prizes. Grab what you like before they are gone. </article></h3>
+        <br><br>
+        <h2>
+            <div style="font-size:20px;border:2px solid black;background-color: cadetblue;">
+                <br>About us:<br><br>
+                The <mark>goal of XYZ online shopping</mark> is to <mark>simplify your shopping experience and make it seamless</mark>. Whether you're dealing with fashion or eletronics, we make sure to provide you a great service as per your requirements.
+                <br><br><br>
+            </div>
+        </h2>
+    </hgroup>
+    </section>
+    
+    <section>
+        <form> 
+            <br>
+            Name:<input type="text" required><br><br>
+            Password:<input type="password" maxlength="8" required><br><br>
+            Gender:<br>
+            <input type="radio" id="male" name="gender" value="male">Male<br>
+            <input type="radio" id="female" name="gender" value="female">Female<br><br>
+            Categories:<br>
+            <input type="checkbox">Western Wear<br>
+            <input type="checkbox">Ethnic wear<br>
+            <input type="checkbox">Footwear<br>
+            <input type="checkbox">Fashion jewellery<br>
+            <input type="checkbox">Fusion Wear<br>
+            <input type="checkbox">Electronic Devices<br><br>
+            Number of items:<input type="number" min="10" max="10"><br><br>
+            <nav>
+                <a href="discount.html">Click to know about discounts</a>
+            </nav>
+            Price Range:<input type="range" min=2 max="20"><br><br>
+            Color:<input type="color"><br><br>
+            Book your slot: <input type="month"><input type="week"><br><br>
+            Expected delivery date:<input type="date"><br><br>
+            Expected time of delivery:<input type="time"><br><br>
+            e-mail id:<input type="email" required><br><br>
+            Mobile number:<input type="text" maxlength="10" required><br>
+            Verify number<input type="button" id="verify" value="verify" onclick="myFunction()"><br><br>
+            Country:<input type="text" value="India" readonly><br><br>
+            Type of id:
+            <select name="id" size="5">
+                <option>Aadhar</option>
+                <option>PAN card</option>
+                <option>Passport</option>
+                <option>Driving license</option>
+                <option>Other</option>
+            </select><br><br>
+            Upload id:<input type="file" ><br> <br>
+            <input type="button" value="Exit">
+            <input type="submit"> 
+            <input type="reset"> 
+        </form>
+    </section>
+    
+</body>
+</html>

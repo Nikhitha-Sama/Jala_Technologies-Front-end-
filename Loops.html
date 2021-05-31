@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Loops </title>
+    </head>
+    <body>
+        List of fruits : 
+        <ul>
+            <li>Mango</li>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Kiwi</li>
+            <li>Banana</li>
+        </ul>
+        <button onclick=myFunction1()>Sort</button>
+        <h2>After sorting in Ascending Order(Using for loop):</h2>
+        <p id="fruit1"></p>
+        <button onclick=myFunction2()>Sort</button>
+        <h2>After sorting in Ascending Order(Using for-in loop):</h2>
+        <p id="fruit2"></p>
+    </body>
+    <script> 
+        function myFunction1()
+        {
+            var fruits=["Mango","Apple","Orange","Kiwi","Banana"];
+            fruits.sort();
+            var sort=" ";
+            for(i=0;i<fruits.length;i++)
+            sort+=fruits[i]+"<br>";
+            document.getElementById("fruit1").innerHTML=sort;
+        }
+        function myFunction2()
+        {
+            var fruits=["Mango","Apple","Orange","Kiwi","Banana"];
+            fruits.sort();
+            var sort=" ";
+            for(i in fruits)
+            sort+=fruits[i]+"<br>";
+            document.getElementById("fruit2").innerHTML=sort;
+        }
+    </script>
+</html>

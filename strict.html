@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Variable Hoisting </title>
+    </head>
+    <body>
+        <p id="name1"></p>
+        <h3>You can find an error in your browser debugger(CTRL+SHIFT+J)</h3>
+    </body>
+    <script>
+        "use strict";
+        obj={firstname:"Ritu",lastname:"Choudhary"}; 
+        document.getElementById("name1").innerHTML=obj.firstname+" "+obj.lastname;
+    </script>
+</html>

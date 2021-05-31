@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        THIS keyword 
+    </title>
+</head>
+<script>
+
+    var Text = '';
+   
+       function setInput(button) {
+          var buttonVal = button.name,
+          textbox = document.getElementById('input_' + buttonVal);
+          textbox.value = Text ;
+          button.style.visibility = "hidden";
+       }
+   </script>
+   
+   <body>
+         <input class='input' id="input_a1" name="a1" value="hello"> 
+         <input type='submit' name='a1' value='x' onclick='setInput(this); return false;'>
+   </body>
+   </html>

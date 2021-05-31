@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EventListener</title>
+    </head>
+    <body>
+        <h3> EventListener to display date and time</h3>
+        <button id="button">Click to disply date and time</button>
+        <p id="d"></p>
+    </body>
+    <script>
+        document.getElementById("button").addEventListener("click",display);
+        function display()
+        {
+            document.getElementById("d").innerHTML = Date();
+        }
+    </script>
+</html>

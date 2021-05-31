@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> CSS Visibilty </title>
+        <style>
+            h1
+            {
+                visibility:visible;
+            }
+            h2
+            {
+                visibility:hidden;
+            }
+            h3
+            {
+                display:block;
+            }
+            tr.collapse
+            {
+                visibility:collapse;
+            }
+            span.a
+            {
+                display: inline; /* the default for span */
+                color:red;
+            }
+            span.b
+            {
+                display:contents;
+                background-color: red;
+            }
+            span.c
+            {
+                display:list-item;
+                list-style-position: inside;
+                background-color:red;
+            }
+            span.d
+            {
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> This is <span class="a"> CSS Visibilty </span></h1>
+        <h2> This is hidden</h2>
+        <h3> This is <span class="a">block code </span></h3>
+        <h4> This is <span class="b">contents block</span></h4>
+        <h4> <span class="c"> This is a list item </span></h4>
+        <h4> This is <span class="d">a none dispay </span> block </h4>
+        <table border=1px>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>David</td>
+                </tr>
+                <tr class="collapse">
+                    <td>2</td>
+                    <td>Steve</td>
+                </tr>
+                <tr> 
+                    <td>3</td>
+                    <td>Anthony</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Micheal</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

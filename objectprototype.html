@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Object prototype</title>
+    </head>
+    <body>
+        <h2>Objects</h2>
+        <p id="d"></p> 
+    </body>
+    <script>
+        function Student(firstname, lastname, age) {
+        this.firstName = firstname;
+        this.lastName = lastname;
+        this.age = age;
+        }
+        Student.prototype.Occupation = "Student";
+        var student1 = new Student("Riya", "Singh", 17);
+        document.getElementById("d").innerHTML =
+        "The Occupation of "+student1.firstName+" is " + student1.Occupation; 
+    </script>
+</html>

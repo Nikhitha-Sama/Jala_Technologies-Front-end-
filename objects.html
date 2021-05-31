@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Objects </title>
+    </head>
+    <body>
+        <h2>Method 1 of accessing elements : </h2>
+        <p id="name1"></p>
+        <h2>Method 2 of accessing elements : </h2>
+        <p id="name2"></p>
+    </body>
+    <script>
+        var obj={firstname:"Ritu",lastname:"Choudhary"};
+        document.getElementById("name1").innerHTML=obj.firstname+" "+obj.lastname;
+        document.getElementById("name2").innerHTML=obj["firstname"]+" "+obj["lastname"];
+    </script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Arrays </title>
+    </head>
+    <body>
+        List of fruits : 
+        <ul>
+            <li>Mango</li>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Kiwi</li>
+            <li>Banana</li>
+        </ul>
+        <button onclick=myFunction()>Sort</button>
+        <h2>After sorting in Ascending Order:</h2>
+        <p id="fruit"></p>
+    </body>
+    <script> 
+        function myFunction()
+        {
+            var fruits=["Mango","Apple","Orange","Kiwi","Banana"];
+            fruits.sort();
+            document.getElementById("fruit").innerHTML=fruits;
+        }
+    </script>
+</html>

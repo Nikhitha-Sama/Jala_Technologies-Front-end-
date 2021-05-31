@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Variable Hoisting </title>
+    </head>
+    <body>
+        <h2>Name : </h2>
+        <p id="name1"></p>
+    </body>
+    <script>
+        obj={firstname:"Ritu",lastname:"Choudhary"}; 
+        document.getElementById("name1").innerHTML=obj.firstname+" "+obj.lastname;
+        var obj;
+    </script>
+</html>

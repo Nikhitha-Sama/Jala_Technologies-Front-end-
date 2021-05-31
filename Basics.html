@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		HTML Basics
+	</title>
+	<style>
+		.mydiv
+		{
+			border: 1px outset black;
+			background-color:whitesmoke;    
+		}
+		div:hover
+		{
+			background-color: rgb(210, 221, 189);
+		}
+		.column {
+			float: left;
+			width: 80%;
+			padding: 10px;
+			height: 300px; /* Should be removed. Only for demonstration */
+		}
+		.column1 {
+			float: right;
+			width: 80%;
+			padding: 10px;
+			height: 300px; /* Should be removed. Only for demonstration */
+		}
+		a:link {
+	  		color: blue;
+		}
+		a:visited {
+		color: purple;
+		}
+		a:hover {
+		color: yellow;
+		}
+		html {
+			font-size: 20px;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+  			scroll-behavior: smooth;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="mydiv"><h1><center><b><i>Basics of Web</i></b></center></h1></div>
+	<hr>
+	<a href="#contactus">Contact Us</a>
+	<div class="mydiv"> 
+		<img src="webpagesample.gif" alt="Webpagegif" style="width:250px;height:220px" align="left">
+		<span style="color:blue;font-weight:bold"><h3>Web Page:</h3></span>
+			<br>
+			<p>
+				A web page or webpage is a document, commonly written in HTML, that is viewed in an Internet browser. A web page can be accessed by entering a URL address into a browser's address bar. A web page may contain text, graphics, and hyperlinks to other web pages and files.
+			</p>
+			<p>
+				A web page is often used to provide information to viewers, including pictures or videos to help illustrate important topics. A web page may also be used as a method to sell products or services to viewers. Multiple web pages make up a website, like our Computer Hope website.
+			</p> 
+			<br>
+	</div>
+	<br>
+	<div class="mydiv"> 
+		<img src="webserversample.gif" alt="Webservergif" style="width:250px;height:200px" align="right">
+		<span style="color:blue;font-weight:bold"><h3>Web Server:</h3></span>
+		<br>
+		<p>
+			web server is software and hardware that uses HTTP (Hypertext Transfer Protocol) and other protocols to respond to client requests made over the World Wide Web. The main job of a web server is to display website content through storing, processing and delivering webpages to users. Besides HTTP, web servers also support SMTP (Simple Mail Transfer Protocol) and FTP (File Transfer Protocol), used for email, file transfer and storage.
+		</p>
+		<br>
+		<a href="webserverlist.html" target="_parent">Click here to see the list of web servers</a>
+	</div>
+	<br>
+	<div class="mydiv">
+		<img src="webbrowsers.jpeg" alt="Webbrowser" style="width:300px;height:400px" align="left">
+		<span style="color:blue;font-weight:bold"><h3>Web Broswer:</h3></span>
+		<blockquote cite="https://en.wikipedia.org/wiki/Web_browser#:~:text=A%20web%20browser%20(commonly%20referred,page%20on%20the%20user's%20device."></blockquote>
+			<p>A web browser (commonly referred to as a browser) is application software for accessing the World Wide Web. When a user requests a web page from a particular website, the web browser retrieves the necessary content from a web server and then displays the page on the user's device.</p>
+			<br>
+			<p>A web browser is not the same thing as a search engine, though the two are often confused.A search engine is a website that provides links to other websites. However, to connect to a website's server and display its web pages, a user must have a web browser installed.</p>
+			<br>
+			<p>Web browsers are used on a range of devices, including desktops, laptops, tablets, and smartphones. In 2020, an estimated 4.9 billion people used a browser.The most used browser is Google Chrome, with a 64% global market share on all devices, followed by Safari with 19%.</p>
+			<br>
+		</blockquote>		
+	</div>
+	<h3> Is this Article helpful?</h3>
+	<input type="radio" name="feedback" value="Yes">
+	<label for="Yes">Yes</label><br>
+	<input type="radio" name="feedback" value="No">
+	<label for="No">No</label><br> <br>
+	<input type=submit value="submit"><br><br>
+	<div class="mydiv" id="contactus">
+		<h3>Contact us:</h3>
+		<b>Office : </b>040-654321123 <br>
+		<b>e-mail id : </b>abc@domain.com
+		<br><br>
+	</div>
+</body>
+</html>

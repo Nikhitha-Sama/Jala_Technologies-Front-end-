@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Call </title>
+    </head>
+    <body> 
+        <h3>Using call()</h3>
+        <p id="d1"></p>
+        <h3>Using apply()</h3>
+        <p id="d2"></p>
+    </body>
+    <script>
+        var fname = {
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        }
+        }
+        var name1 = {
+        firstName:"Ritu",
+        lastName: "Choudhary"
+        }
+        var name2 = {
+        firstName:"Mary",
+        lastName: "Smith"
+        }
+        var x = fname.fullName.call(name1); 
+        document.getElementById("d1").innerHTML = x; 
+        var x = fname.fullName.apply(name2); 
+        document.getElementById("d2").innerHTML = x; 
+    </script>
+</html>

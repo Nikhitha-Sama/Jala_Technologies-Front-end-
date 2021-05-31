@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS table layout </title> 
+        <style>
+            table.t 
+            {
+                table-layout: fixed; 
+                width:200px;
+                height:200px;
+            }
+            table.t1
+            {
+                table-layout: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Table with a fixed layout</h3>
+        <table border="1px" class="t">
+            <thead>
+                <tr>
+                    <th>Number of the candidate</th>
+                    <th>Name of the candidate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>David</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve</td>
+                </tr>
+                <tr> 
+                    <td>3</td>
+                    <td>Anthony</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Micheal</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Table with a no layout</h3>
+        <table border="1px" class="t1">
+            <thead>
+                <tr>
+                    <th>Number of the candidate</th>
+                    <th>Name  of the candidate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>David</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve</td>
+                </tr>
+                <tr> 
+                    <td>3</td>
+                    <td>Anthony</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Micheal</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

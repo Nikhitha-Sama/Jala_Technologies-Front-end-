@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Accessories</title>
+    </head>
+    <body>
+        <h2>Counters</h2>
+        <p id="demo"></p>
+    </body>
+    <script>
+        var obj = {counter:0};
+        Object.defineProperty(obj, "reset", {
+        get : function () {this.counter = 0;}
+        });
+        Object.defineProperty(obj, "increment", {
+        get : function () {this.counter++;}
+        });
+        Object.defineProperty(obj, "decrement", {
+        get : function () {this.counter--;}
+        });
+        Object.defineProperty(obj, "add", {
+        set : function (value) {this.counter += value;}
+        });
+        Object.defineProperty(obj, "subtract", {
+        set : function (value) {this.counter -= value;}
+        });
+        obj.reset;
+        obj.add = 52;
+        obj.subtract = 10;
+        obj.increment;
+        obj.add=65;
+        document.getElementById("demo").innerHTML = obj.counter;
+    </script>
+</html>
